@@ -23,7 +23,7 @@ ship2() {
 
   # prepare GPT prompt
   json=$(jq -n --arg d "$diff" '{
-    model: "gpt-4o",
+    model: "gpt-4o-mini",
     messages: [
       { role: "system", content: "You are a senior software engineer. Generate a clear, concise Git commit message based on the following diff. Respond with only the commit message, at most 1 sentence." },
       { role: "user", content: $d }
