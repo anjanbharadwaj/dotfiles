@@ -8,7 +8,7 @@ boat() {
 ship() {
   git add -A && git commit -m "$*" && git push origin "$(git rev-parse --abbrev-ref HEAD)"
 }
-ship() {
+shipit() {
   git add -A && git commit -m "shipping" && git push origin "$(git rev-parse --abbrev-ref HEAD)"
 }
 
